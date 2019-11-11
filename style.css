@@ -1,0 +1,274 @@
+body {
+    background-color: black;
+}
+
+.r-line {
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+.r-circle {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background-color: blue;
+    border-radius: 150px;
+}
+
+.r-diag {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 275px;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+.r-neg {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.a-circle {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    background-color: blue;
+    border-radius: 150px;
+}
+
+.a-line {
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    top: 250px;
+    left: 525px;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+.a-neg {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.i-line {
+    width: 50px;
+    height: 125px;
+    position: absolute;
+    top: 275px;
+    left: 650px;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+.i-dot {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    background-color: blue;
+    border-radius: 50px;
+}
+
+.n-line {
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    top: 250px;
+    left: 800px;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+.n-circle {
+    width: 125px;
+    height: 200px;
+    position: absolute;
+    top: 250px;
+    left: 825px;
+    background-color: blue;
+    border-radius: 150px;
+}
+
+.n-neg {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 850px;
+    background-color: black;
+    border-radius: 150px;
+}
+
+.n-neg2 {
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    top: 375px;
+    left: 800px;
+    background-color: black;
+}
+
+.n-line2 {
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    top: 250px;
+    left: 800px;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+.n-line3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 350px;
+    left: 900px;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-bottom: 200px solid blue;
+    position: absolute;
+    left: 1120px;
+    top: 175px;
+    transform: rotate(deg);
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    left: 1100px;
+    background-color: blue;
+    border-radius: 300px;
+}
+
+#container{
+	position: absolute;
+	/* background-color: #000; */
+	left:0;
+	top:0;
+	height:100vh;
+	width: 100vw;
+}
+
+.rain{
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #4fbaff;
+	border-radius: 20px;
+
+}
+
+.animation {
+    animation-name: scale;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes scale {
+    from {
+        height: 125px;
+    }
+
+    to {
+        height: 2000px;
+    }
+}
+
+.animation2 {
+    animation-name: scaleR;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes scaleR {
+    from {
+        height: 200px;
+    }
+
+    to {
+        height: 2000px;
+    }
+}
+
+.animation3 {
+    animation-name: scaleA;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes scaleA {
+    from {
+        height: 150px;
+    }
+
+    to {
+        height: 2000px;
+    }
+}
+
+.animation4 {
+    animation-name: scaleN;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes scaleN {
+    from {
+        height: 50px;
+    }
+
+    to {
+        height: 2000px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: black;
+    }
+
+    .Letters{
+        transform: scale(0.3);
+    }
+
+    #container{
+        position: absolute;
+        left: -150px;
+    }
+
+
+}
